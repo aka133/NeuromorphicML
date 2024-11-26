@@ -17,19 +17,22 @@ This component represents an advance in neural processing, featuring population 
 ### 4. Word2Vec Binarization System (`word2vecbinarizer.py`)
 I developed a distributed binary embedding system that efficiently converts continuous word embeddings to binary representations. Using a 5-bit quantization scheme with L2 normalization, the system preserves semantic relationships while significantly reducing memory requirements. The implementation leverages PyTorch's DistributedDataParallel for multi-GPU processing, incorporating mixed-precision training and automated GPU memory management. The system supports both Hamming distance and cosine similarity comparisons, enabling efficient word analogy tasks in binary space.
 
-### 5. Neural Evolution Model (`pre-mel3.py`)
+### 5. Signal Quantization System (quantizer.py)
+I developed a sophisticated signal quantization system implementing multiple orders of Sigma-Delta quantization for optimal signal-to-noise performance. The system features four distinct quantization methods: a greedy one-bit quantizer, and first, second, and third-order Sigma-Delta quantizers. Each implementation progressively improves noise shaping and signal preservation. The third-order system, using carefully tuned coefficients (175/144, -25/108, 7/432), achieves the highest precision quantization through triple-stage integration. The architecture employs Hadamard matrices for signal transformation and implements comprehensive error analysis, including Johnson-Lindenstrauss embedding comparison.
+
+### 6. Neural Evolution Model (`pre-mel3.py`)
 Inspired by DeepMind's MuZero and reinforcement learning approaches to brain-like architectures, I developed an evolvable spiking neural network that mimics biological learning processes. The system implements biologically-plausible Leaky Integrate-and-Fire neurons with configurable time constants and adaptive thresholding. The network features dynamic topology adaptation through activity-based pruning and distance-based connectivity rules. Learning mechanisms include Spike-Timing-Dependent Plasticity (STDP), synaptic scaling, and homeostatic plasticity. The architecture demonstrates the potential for reinforcement learning to train brain-like neural networks through evolutionary processes.
 
-### 6. Spike Encoding System (`spikecoder.py`)
+### 7. Spike Encoding System (`spikecoder.py`)
 I implemented a neural encoding system that converts text into biologically-inspired spike trains. The system utilizes high-density population coding with up to 2500 neurons per dimension and configurable firing rates up to 1000Hz. Using BERT embeddings as initial representations, the implementation maintains semantic relationships through Gaussian tuning curves and temporal dynamics. The spike generation process incorporates distance-based firing rate modulation across 100 time steps, with robust decoding mechanisms for accurate reconstruction. This system represents an advancement in neural coding for language processing, bridging theoretical neuroscience with practical NLP applications.
 
-### 7. Matryoshka Binary Embedder (`matryoshka_binary_embedder.py`)
+### 8. Matryoshka Binary Embedder (`matryoshka_binary_embedder.py`)
 This system implements hierarchical binary embeddings using Matryoshka Representation Learning, starting with continuous embeddings and converting them to efficient binary representations supporting multiple resolutions from 1024 to 8192 bits. The architecture employs straight-through estimators for binary gradients and enables hierarchical reconstruction capabilities. The system features a multi-component loss function balancing reconstruction quality with semantic similarity preservation, alongside evaluation metrics including word similarity benchmarking and analogy task evaluation.
 
-### 8. Advanced Spiking Architecture (`spikingjam2.py`)
+### 9. Advanced Spiking Architecture (`spikingjam2.py`)
 My latest spiking neural network architecture achieves 100% reconstruction accuracy through a combination of rate coding and population coding, successfully converting continuous embeddings into neural spikes. The system implements population coding with temporal position encoding and rate-based spike generation. The system features phase-shifted spiking attention mechanisms and leaky integrate-and-fire neurons, managed through careful membrane potential control systems.
 
-### 9. Advanced Neural Architecture (`cerebro8.py`)
+### 10. Advanced Neural Architecture (`cerebro8.py`)
 My most sophisticated neural simulation environment implements a multi-layer cortical architecture with integrated working memory systems. The architecture features visualization tools for network analysis and implements Spike-Timing-Dependent Plasticity (STDP) for biologically-inspired learning processes.
 
 ## Technical Achievements & Innovations
