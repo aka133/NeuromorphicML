@@ -38,7 +38,7 @@ My most sophisticated neural simulation environment implements a multi-layer cor
 ## Technical Achievements & Innovations
 
 ### Embedding Compression Pipeline
-Starting with continuous embeddings from FastText and OpenAI's ada-02, I developed a binary autoencoder using sigma-delta quantization to preserve Euclidean distances. The system progressed to handle concatenated embedding models and ultimately achieved a novel compression using Microsoft's 1.58 bit LLM compression technique, resulting in 10,000x compression savings while maintaining 100% reconstruction accuracy.
+Starting with continuous embeddings from FastText and OpenAI's ada-02, I developed a binary autoencoder using sigma-delta quantization to preserve Euclidean distances. The system progressed to handle concatenated embedding models and ultimately achieved a novel compression using Microsoft's 1.58 bit LLM compression technique, resulting in 50-100x compression savings while maintaining 100% reconstruction accuracy.
 
 ### Distributed Computing
 I implemented multi-GPU training support with efficient data parallel processing pipelines. My streaming dataset processing and distributed sampler implementation enable scalable training across multiple computing nodes. My distributed processing pipeline incorporates features such as mixed-precision training, automated GPU memory management, and efficient batch processing with error handling. The binary embedding system achieves significant memory reduction while preserving semantic relationships through quantization schemes.
