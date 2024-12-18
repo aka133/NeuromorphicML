@@ -1,7 +1,7 @@
 # NeuromorphicML
 
 ## Project Overview
-This repository documents the evolution of a neuromorphic computing system, progressing from basic distributed neural networks to advanced spiking neural architectures with bio-inspired mechanisms. The research spans embedding compression, spiking neural networks, and biologically-inspired computing architectures.
+This repository documents the evolution of a neuromorphic computing system, progressing from basic distributed neural networks to advanced spiking neural architectures with bio-inspired mechanisms. The research spans embedding compression, spiking neural networks, and other biologically-inspired computing architectures such as liquid state machines.
 
 ## Project Evolution & Technical Components
 
