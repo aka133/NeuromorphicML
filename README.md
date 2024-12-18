@@ -65,4 +65,5 @@ The research evolved from a basic neuroevolution model with just 3 neurons to in
 
 ## Contact
 archit.kalra@rice.edu
+
 midhun.sadanand@yale.edu
